@@ -1,0 +1,43 @@
+
+<div [ngClass]="botMessage ? 'd-flex flex-row p-3' : 'd-flex flex-row-reverse p-3'">
+
+    <div *ngIf="botMessage;then botImage else personImage"></div>
+
+    <ng-template #botImage>
+        <img src="../../assets/img/walter avatar.jpeg" width="30" height="30">
+    </ng-template>
+
+    <ng-template #personImage>
+        <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-7.png" width="30" height="30">
+    </ng-template>
+
+    <div class="" [ngClass]="botMessage ? 'chat ml-2 p-3' : 'bg-white mr-2 p-3'" >
+
+        <div *ngIf="label != undefined;then writeLabel else writeLabels"></div>
+
+        <ng-template #writeLabel>
+            <div [ngClass]="botMessage ? '' : 'text-muted'" >{{label}}</div>
+        </ng-template>
+
+        <ng-template #writeLabels>
+            <div *ngFor="let item of labels; index as i">
+                <div [ngClass]="botMessage ? '' : 'text-muted'" >{{item}}</div>
+                
+            </div>
+        </ng-template>
+    </div>
+</div>
+
+
+<div *ngIf="options != undefined;then writeOptions"></div>
+
+<ng-template #writeOptions>    
+    <div *ngFor="let option of options; index as i"  class="d-flex flex-row pl-3 pr-3 pb-3 ml-3 pt-0">
+        <div class="chat ml-2 p-3 ml-4 pt-0 chat-option" (click)="callMethod(i)">
+            <div>
+                {{option.text}}
+            </div>
+        </div>
+    </div>
+</ng-template>
+
