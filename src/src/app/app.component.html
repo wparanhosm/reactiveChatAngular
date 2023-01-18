@@ -1,0 +1,233 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+<!-- <div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>Welcome</span>
+    <div class="spacer"></div>
+    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+        <rect width="400" height="400" fill="none"/>
+        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+      </svg>
+    </a>
+    <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://youtube.com/angular" title="YouTube">
+      <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+        <path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+      </svg>
+    </a>
+</div>
+
+
+<div class="content" role="main">
+
+ 
+  <router-outlet></router-outlet>
+
+</div> -->
+
+
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul #ulSidebar class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+          <!-- Nav Item - Dashboard -->
+          <li class="nav-item active">
+              <a class="nav-link" href="#">
+                  <fa-icon [icon]="icons.activeIconDashboard" *ngIf="showIcons"></fa-icon>
+                  <span>Dashboard</span></a>
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider">
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <fa-icon [icon]="icons.chartAreaIcon" *ngIf="showIcons"></fa-icon>
+                  <span>Charts</span></a>
+          </li>
+
+          <!-- Nav Item - Tables -->
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                <fa-icon [icon]="icons.tablesIcon" *ngIf="showIcons"></fa-icon>
+                  <span>Tables</span></a>
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider">
+
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center d-none d-md-inline">
+            <button #togglerButton class="rounded-circle border-0 toggled" id="sidebarToggle" style="color:rgba(255,255,255,.8)">
+              <fa-icon [icon]="icons.leftArrowIcon" *ngIf="!showIcons"></fa-icon>
+              <fa-icon [icon]="icons.rightArrowIcon" *ngIf="showIcons"></fa-icon>
+            </button>
+        </div>
+
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+
+          <!-- Main Content -->
+          <div id="content">
+
+              <!-- Topbar -->
+              <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                  <!-- Sidebar Toggle (Topbar) -->
+                  <button #sidebarToggleTop id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <fa-icon [icon]="icons.faBars"></fa-icon>
+                  </button>
+
+                  <!-- Topbar Search -->
+                  <form
+                      class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                      <div class="input-group">
+                          <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                              aria-label="Search" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                              <button class="btn btn-primary" type="button">
+                                <fa-icon [icon]="icons.faSeach"></fa-icon>
+                              </button>
+                          </div>
+                      </div>
+                  </form>
+
+                  <!-- Topbar Navbar -->
+                  <ul class="navbar-nav ml-auto">
+
+                      <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                      <li class="nav-item dropdown no-arrow d-sm-none">
+                          <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <fa-icon [icon]="icons.faSeach"></fa-icon>
+                          </a>
+                          <!-- Dropdown - Messages -->
+                          <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                              aria-labelledby="searchDropdown">
+                              <form class="form-inline mr-auto w-100 navbar-search">
+                                  <div class="input-group">
+                                      <input type="text" class="form-control bg-light border-0 small"
+                                          placeholder="Search for..." aria-label="Search"
+                                          aria-describedby="basic-addon2">
+                                      <div class="input-group-append">
+                                          <button class="btn btn-primary" type="button">
+                                            <fa-icon [icon]="icons.faSeach"></fa-icon>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </li>
+
+                      <!-- Nav Item - Alerts -->
+                      <li class="nav-item dropdown no-arrow mx-1">
+                          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <fa-icon [icon]="icons.faBell"></fa-icon>
+                              <!-- Counter - Alerts -->
+                              <span class="badge badge-danger badge-counter">3+</span>
+                          </a>
+                          <!-- Dropdown - Alerts -->
+                          <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                              aria-labelledby="alertsDropdown">
+                              <h6 class="dropdown-header">
+                                  Alerts Center
+                              </h6>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                                  <div class="mr-3">
+                                      <div class="icon-circle bg-primary">
+                                        <fa-icon [icon]="icons.faFileAlt"></fa-icon>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div class="small text-gray-500">December 12, 2019</div>
+                                      <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                  </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                                  <div class="mr-3">
+                                      <div class="icon-circle bg-success">
+                                        <fa-icon [icon]="icons.faDonateText"></fa-icon>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div class="small text-gray-500">December 7, 2019</div>
+                                      $290.29 has been deposited into your account!
+                                  </div>
+                              </a>
+                              <a class="dropdown-item d-flex align-items-center" href="#">
+                                  <div class="mr-3">
+                                      <div class="icon-circle bg-warning">
+                                        <fa-icon [icon]="icons.faExclamateTriagle"></fa-icon>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <div class="small text-gray-500">December 2, 2019</div>
+                                      Spending Alert: We've noticed unusually high spending for your account.
+                                  </div>
+                              </a>
+                              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                          </div>
+                      </li>
+
+                      <!-- Nav Item - Messages -->
+                      <li class="nav-item dropdown no-arrow mx-1">
+                          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <fa-icon [icon]="icons.faEnvelope"></fa-icon>
+                              <!-- Counter - Messages -->
+                              <span class="badge badge-danger badge-counter">7</span>
+                          </a>
+
+                      </li>
+
+                      <div class="topbar-divider d-none d-sm-block"></div>
+                  </ul>
+
+              </nav>
+              <!-- End of Topbar -->
+
+              <div class="container-fluid">
+                  <router-outlet></router-outlet>
+              </div>
+
+          </div>
+          <!-- End of Main Content -->
+
+          <!-- Footer -->
+          <footer class="sticky-footer bg-white">
+              <div class="container my-auto">
+                  <div class="copyright text-center my-auto">
+                      <span>Copyright &copy; Example Website 2023</span>
+                  </div>
+              </div>
+          </footer>
+
+      </div>
+
+  </div>
+
+
+
+</body>

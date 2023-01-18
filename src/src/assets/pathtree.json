@@ -1,0 +1,181 @@
+{
+	"content": [
+		{
+			"id": 1,
+			"messages": [
+				"Olá",
+				"Meu nome é Walter, e eu sou seu assistente virtual!",
+				"Como posso te ajudar?"
+			],
+			"options": [
+				{
+                    "optionId": 1,
+					"optionText": "1 - Desejo saber mais sobre você",
+					"pathId": 2
+				},
+				{
+                    "optionId": 2,
+					"optionText": "2 - Desejo iniciar meu atendimento",
+					"pathId": 3
+				}
+			]
+		},
+		{
+			"id": 2,
+			"messages": [
+				"Eu sou um assistente virtual criado para tirar suas dúvidas relacionadas a programação e crescimento na área de TI",
+				"Meu desenvolvedor cuidou super bem de mim, e ele quer que você também tenha a oportunidade de criar o que você desejar com o poder da programação",
+				"Que tal iniciar seu atendimento, para que eu possa tirar suas dúvidas sobre qual caminho você quer percorrer nessa área?",
+				"É bem simples! Basta apenas selecionar a opção abaixo"
+			],
+			"options": [
+				{
+                    "optionId": 3,
+					"optionText": "1 - Desejo saber mais sobre a área de programação",
+					"pathId": 3
+				}
+			]
+		},
+		{
+			"id": 3,
+			"messages": [
+				"Perfeito! Vamos iniciar um tour sobre as principais tecnologias que temos hoje no mercado!",
+				"Qual delas você quer ver primeiro?"
+			],
+			"options": [
+				{
+                    "optionId": 4,
+					"optionText": "1 - Banco de dados",
+					"pathId": 4
+				},
+				{
+                    "optionId": 5,
+					"optionText": "2 - Programação back-end",
+					"pathId": 7
+				},
+				{
+                    "optionId": 6,
+					"optionText": "3 - Programação web (front-end)",
+					"pathId": 8
+				},
+				{
+                    "optionId": 7,
+					"optionText": "4 - Segurança da informação",
+					"pathId": 9
+				}
+			]
+		},
+		{
+			"id": 4,
+			"messages": [
+				"Ótimo tema! Eu particularmente adoro banco de dados",
+				"Mexer com muita informação me deixa muito empolgado!",
+				"Os bancos de dados são essenciais em qualquer aplicação que deseja-se guardar informações para serem utilizadas no futuro",
+				"A imensa maioria das aplicações que existem hoje em dia, são armazenadas dentro de bancos de dados mundo a fora",
+				"O controle dessas informações e como armazená-las, foram sofrendo variações durante o tempo. Atualmente as duas formas mais comuns de armazenamento são através de bancos relacionais (popularmente chamados de SQL)",
+				"E bancos não relacionais (popularmente conhecidos como NoSQL)",
+				"O que você deseja ver mais a fundo?"
+			],
+			"options": [
+				{
+                    "optionId": 8,
+					"optionText": "1 - Bancos de dados relacionais",
+					"pathId": 5
+				},
+				{
+                    "optionId": 9,
+					"optionText": "2 - Bancos de dados não relacionais",
+					"pathId": 6
+				},
+				{
+                    "optionId": 10,
+					"optionText": "3 - Voltar para o Tour",
+					"pathId": 3
+				}
+			]
+		},
+		{
+			"id": 5,
+			"messages": [
+				"Os bancos relacionais, são aqueles que utilizam uma forma estrutural de se organizar os dados",
+				"Geralmente, para montar esses bancos, é necessário dividir as informações necessárias em camadas, chamadas de entidades",
+				"Essas entidades, é a representação de um grupo de informações de determinada classe",
+				"As entidades podem ter ligação com outras entidades, que é o que chamamos de relacionamento",
+				"Existem 3 tipos de relacionamentos dentro do modelo relacional: O primeiro é o modelo 1 para 1, que é quando apenas um objeto daquela entidade pode pertencer a outra (por exemplo CPF e Pessoa)",
+				"O segundo tipo é o 1 para vários, onde como o próprio nome diz, cada objeto da entidade pode ter 1 ou mais daquelas relações (Como uma pessoa pode ter vários telefones)",
+				"O terceiro tipo é o todos para todos, onde os dois lados da relação podem ser mais de 1 relacionamento. Nesses casos, o ideal é criar uma entidade intermediária que liga as duas entidades, assim as relações das duas sempre seguirá sendo 1 para 1 ou 1 para várias",
+				"Esse modelo relacional, por ter uma série de regras e ter um padrão bem definido, é utilizado pelos principais sistemas gerenciadores de bancos de dados (chamados de SGBDs)",
+				"Por padrão, esses bancos adotam a linguagem SQL (Simple Query Language) como base de duas consultas. Cada SGBD tem sua peculiariade, como funções que facilitam o desenvolvimento dentro do banco",
+				"Os principais bancos relacionais são: MySQL, SQL Server, Oracle, PostgreeSQL e MariaDB"
+			],
+			"options": [
+				{
+                    "optionId": 11,
+					"optionText": "1 - Quero saber mais sobre banco de dados",
+					"pathId": 4
+				}
+			]
+		},
+		{
+			"id": 6,
+			"messages": [
+				"Os bancos de dados não relacionais, conhecidos como NoSQL (not only SQL) podem ter várias abordagens de como as informações são criadas dentro dele",
+				"Uma das mais comuns, é o armazenamento orientado a documentos",
+				"Este por exemplo, gerencia um conjunto de campos de cadeia de caracteres nomeados e valores de dados de uma entidade, que são conhecidas como documentos.",
+				"Cada valor de campo pode ser um item escalável, como um número ou elemento composto, como uma lista ou coleção de pai-filho.",
+				"Esses dados são armazenados nos campos de documentos que podem ser codificados de diversas maneiras, incluindo XML,JSON ou YAML, que são formas mais padronizadas de armazenar informações dentro de um documento",
+				"Eles podem ser inclusive armazenados como um texto sem formatação, embora seja menos comum",
+				"Uma curiosidade, é que meu roteiro foi totalmente escrito em um JSON, em um documento dentro do meu código fonte.",
+				"Por ser um banco que não tem uma estrutura rigorosa e com menos regras que os bancos relacionais. O desenvolvimento utilizando esses bancos são mais dinâmicos, mais otimizados, porém, mais complexos por ter uma dificuldade maior ao relacionar os dados entre si",
+				"Alguns dos bancos não relacionais famosos são: MongoDB, Firebase, DynamoBD e Redis"
+				
+			],
+			"options": [
+				{
+                    "optionId": 11,
+					"optionText": "1 - Quero saber mais sobre banco de dados",
+					"pathId": 4
+				}
+			]
+		},
+		{
+			"id": 7,
+			"messages": [
+				"Essa é a tela responsável por eu te explicar o back-end, porém, meu desenvolvedor escreveu uma bíblia explicando o banco de dados, então ele ficou com preguiça de me ensinar essa parte, mas você consegue achar bastante conteudo relacionado na internet"
+			],
+			"options": [
+				{
+                    "optionId": 11,
+					"optionText": "1 - Voltar para o Tour",
+					"pathId": 3
+				}
+			]
+		},
+		{
+			"id": 8,
+			"messages": [
+				"Essa é a tela responsável por eu te explicar o front-end, porém, meu desenvolvedor escreveu uma bíblia explicando o banco de dados, então ele ficou com preguiça de me ensinar essa parte, mas você consegue achar bastante conteudo relacionado na internet"
+			],
+			"options": [
+				{
+                    "optionId": 11,
+					"optionText": "1 - Voltar para o Tour",
+					"pathId": 3
+				}
+			]
+		},
+		{
+			"id": 9,
+			"messages": [
+				"Essa é a tela responsável por eu te explicar sobre segurança da informação, porém, meu desenvolvedor escreveu uma bíblia explicando o banco de dados, então ele ficou com preguiça de me ensinar essa parte, mas você consegue achar bastante conteudo relacionado na internet"
+			],
+			"options": [
+				{
+                    "optionId": 11,
+					"optionText": "1 - Voltar para o Tour",
+					"pathId": 3
+				}
+			]
+		}
+	]
+}
